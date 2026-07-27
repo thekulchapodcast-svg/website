@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery — The Kulcha</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <a class="logo" href="index.html"><img src="assets/kulcha-logo.png" alt="The Kulcha"></a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav">MENU</button>
+    <nav id="mainNav">
+      <a href="index.html#podcast">Podcast</a>
+      <a href="index.html#events">Events</a>
+      <a href="kulcha-sundaze.html">Sundaze</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero sub-hero">
+    <div class="hero-eyebrow-row">
+      <span class="eyebrow">Moments from the culture</span>
+    </div>
+    <h1 class="hero-title">
+      <span>The</span>
+      <span class="accent">Gallery</span>
+    </h1>
+    <div class="hero-foot">
+      <p class="hero-sub">Photos and clips from Kulcha Sundaze, Payday Rave, The Comedy Cue, and everything in between.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <h2>Photos &amp; Videos</h2>
+      <span class="section-num">01 / The archive</span>
+    </div>
+    <!--
+      Add real photos/videos here. Two ways to do it:
+      1. Photo — replace a .gallery-tile div with:
+         <div class="gallery-tile"><img src="assets/gallery/your-photo.jpg" alt="Describe the moment"></div>
+      2. Video — replace with:
+         <div class="gallery-tile"><video src="assets/gallery/your-clip.mp4" controls></video></div>
+      Drop your files into an assets/gallery/ folder next to this page,
+      then duplicate a tile below for each new photo or clip.
+    -->
+    <div class="gallery-grid">
+      <div class="gallery-tile"><span class="placeholder-label">Add a photo</span></div>
+      <div class="gallery-tile video-tile"><span class="placeholder-label">Add a video</span></div>
+      <div class="gallery-tile"><span class="placeholder-label">Add a photo</span></div>
+      <div class="gallery-tile"><span class="placeholder-label">Add a photo</span></div>
+      <div class="gallery-tile video-tile"><span class="placeholder-label">Add a video</span></div>
+      <div class="gallery-tile"><span class="placeholder-label">Add a photo</span></div>
+      <div class="gallery-tile"><span class="placeholder-label">Add a photo</span></div>
+      <div class="gallery-tile video-tile"><span class="placeholder-label">Add a video</span></div>
+      <div class="gallery-tile"><span class="placeholder-label">Add a photo</span></div>
+    </div>
+
+    <div class="btn-row" style="margin-top:2.5rem;">
+      <a class="btn solid" href="https://www.instagram.com/thekulchaza" target="_blank" rel="noopener">More on Instagram</a>
+      <a class="btn" href="https://youtube.com/@thekulcha7514" target="_blank" rel="noopener">More on YouTube</a>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-band">
+    <p class="eyebrow">Pull up</p>
+    <h2>Be In The Next One</h2>
+    <p>Come through to a session and you might just end up in the gallery yourself.</p>
+    <div class="social-list">
+      <a href="https://www.instagram.com/thekulchaza" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://twitter.com/thekulchaza" target="_blank" rel="noopener">X / Twitter</a>
+      <a href="https://web.facebook.com/TheKulchaZA/" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://youtube.com/@thekulcha7514" target="_blank" rel="noopener">YouTube</a>
+    </div>
+  </section>
+
+  <footer>THE KULCHA ZA — CULTURE, UNCUT — © 2026</footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const nav = document.getElementById('mainNav');
+    toggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+  </script>
+
+</body>
+</html>

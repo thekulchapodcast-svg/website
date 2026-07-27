@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kulcha Sundaze — The Kulcha</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <a class="logo" href="index.html"><img src="assets/kulcha-logo.png" alt="The Kulcha"></a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav">MENU</button>
+    <nav id="mainNav">
+      <a href="index.html#podcast">Podcast</a>
+      <a href="index.html#events">Events</a>
+      <a href="kulcha-sundaze.html">Sundaze</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero sub-hero">
+    <div class="hero-eyebrow-row">
+      <span class="eyebrow">Every Sunday · Hotstix Music &amp; Pool Bar</span>
+    </div>
+    <h1 class="hero-title">
+      <span>Kulcha</span>
+      <span class="accent">Sundaze</span>
+    </h1>
+    <div class="hero-foot">
+      <p class="hero-sub">A cultural Sunday experience — live music, DJs, food, and community, every single week. No corporate polish, just the culture, uncut.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <h2>The Experience</h2>
+      <span class="section-num">01 / What it is</span>
+    </div>
+    <div class="about-grid">
+      <div class="about-visual"></div>
+      <div class="about-copy">
+        <p class="pull-quote">"Sundaze isn't a rave. It's a reset."</p>
+        <p>Kulcha Sundaze is our weekly gathering — a chilled but vibrant Sunday session where live sets, DJs, food, and the community come together. It's where the week winds down and the culture winds up.</p>
+        <p>Whether you're pulling up for the music, the people, or just the vibe, Sundaze is built to feel like home every time.</p>
+      </div>
+    </div>
+
+    <div class="venue-info">
+      <div class="venue-item">
+        <p class="eyebrow">Venue</p>
+        <p>Hotstix Music &amp; Pool Bar</p>
+        <p class="small">1333 Stanza Bopape, Pretoria</p>
+      </div>
+      <div class="venue-item">
+        <p class="eyebrow">When</p>
+        <p>Every Sunday</p>
+        <p class="small">Check socials for weekly start times</p>
+      </div>
+      <div class="venue-item">
+        <p class="eyebrow">Get There</p>
+        <p><a href="https://www.google.com/maps/search/?api=1&query=1333+Stanza+Bopape+Street+Pretoria" target="_blank" rel="noopener" style="border-bottom:1px solid var(--gold);padding-bottom:2px;">Open in Maps</a></p>
+        <p class="small">Directions to Hotstix</p>
+      </div>
+    </div>
+
+    <div class="btn-row" style="margin-top:2.5rem;">
+      <a class="btn solid" href="https://chat.whatsapp.com/KT1OQSl1Qar5RSiysOmWuZ" target="_blank" rel="noopener">Join the WhatsApp community</a>
+      <a class="btn" href="https://www.instagram.com/thekulchaza" target="_blank" rel="noopener">Follow for weekly updates</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <h2>Sundaze Gallery</h2>
+      <span class="section-num">02 / Pics &amp; vids</span>
+    </div>
+    <!--
+      Add real Sundaze photos/videos here. Two ways to do it:
+      1. Photo — replace a .gallery-tile div with:
+         <div class="gallery-tile"><img src="assets/sundaze/your-photo.jpg" alt="Kulcha Sundaze"></div>
+      2. Video — replace with:
+         <div class="gallery-tile"><video src="assets/sundaze/your-clip.mp4" controls></video></div>
+      Drop your files into an assets/sundaze/ folder next to this page.
+    -->
+    <div class="gallery-grid">
+      <div class="gallery-tile"><span class="placeholder-label">Add a Sundaze photo</span></div>
+      <div class="gallery-tile"><span class="placeholder-label">Add a Sundaze photo</span></div>
+      <div class="gallery-tile video-tile"><span class="placeholder-label">Add a Sundaze video</span></div>
+      <div class="gallery-tile"><span class="placeholder-label">Add a Sundaze photo</span></div>
+      <div class="gallery-tile video-tile"><span class="placeholder-label">Add a Sundaze video</span></div>
+      <div class="gallery-tile"><span class="placeholder-label">Add a Sundaze photo</span></div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-band">
+    <p class="eyebrow">Pull up</p>
+    <h2>See You Sunday</h2>
+    <p>Bring your people, bring the vibe. Kulcha Sundaze happens every week at Hotstix — follow our socials for the weekly lineup and details.</p>
+    <div class="social-list">
+      <a href="https://www.instagram.com/thekulchaza" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://twitter.com/thekulchaza" target="_blank" rel="noopener">X / Twitter</a>
+      <a href="https://web.facebook.com/TheKulchaZA/" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://youtube.com/@thekulcha7514" target="_blank" rel="noopener">YouTube</a>
+    </div>
+  </section>
+
+  <footer>THE KULCHA ZA — CULTURE, UNCUT — © 2026</footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const nav = document.getElementById('mainNav');
+    toggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+  </script>
+
+</body>
+</html>

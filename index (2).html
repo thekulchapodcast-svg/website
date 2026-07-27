@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Kulcha — Culture, Uncut</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="preloader">
+    <img class="pl-logo" src="assets/kulcha-logo.png" alt="The Kulcha">
+    <div class="pl-bar"><span id="plBarFill"></span></div>
+    <div class="pl-pct" id="plPct">0%</div>
+  </div>
+
+  <header class="topbar">
+    <a class="logo" href="index.html"><img src="assets/kulcha-logo.png" alt="The Kulcha"></a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav">MENU</button>
+    <nav id="mainNav">
+      <a href="#podcast">Podcast</a>
+      <a href="#events">Events</a>
+      <a href="kulcha-sundaze.html">Sundaze</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-eyebrow-row">
+      <span class="eyebrow">Pretoria · Music · Culture · Community</span>
+    </div>
+    <h1 class="hero-title">
+      <span>The</span>
+      <span class="accent">Kulcha</span>
+    </h1>
+    <div class="hero-foot">
+      <p class="hero-sub">The Kulcha is a community-based movement from Pretoria. We create events, produce a podcast, and back local talent — plus offer sound equipment hire so the culture always has a stage.</p>
+      <span class="scroll-cue">Scroll</span>
+    </div>
+  </section>
+
+  <div class="stats">
+    <!-- Episodes + rating pulled from your Apple Podcasts / Quicket listings.
+         Cities Reached is a placeholder — swap data-count for your real number. -->
+    <div class="stat"><div class="num" data-count="156">0</div><div class="label">Episodes</div></div>
+    <div class="stat"><div class="num" data-count="15">0</div><div class="label">Quicket Reviews</div></div>
+    <div class="stat"><div class="num" data-count="4.8" data-decimal="1">0</div><div class="label">Quicket Rating</div></div>
+    <div class="stat"><div class="num" data-count="2">0</div><div class="label">Cities Reached</div></div>
+  </div>
+
+  <section id="podcast" class="section">
+    <div class="section-head">
+      <h2>The Kulcha Podcast</h2>
+      <span class="section-num">01 / On the mic</span>
+    </div>
+    <div class="podcast-grid">
+      <div>
+        <div class="video-frame">
+          <!-- Swap for a real embed once you have an episode URL:
+               <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="The Kulcha latest episode" allowfullscreen loading="lazy"></iframe> -->
+          <a class="video-cover" href="https://youtube.com/@thekulcha7514" target="_blank" rel="noopener">
+            <span class="play-btn"></span>
+            <span class="label">Watch the latest episode</span>
+          </a>
+        </div>
+        <p class="hosts">Hosted by @BraSmoove &amp; @TheUnoYouKnow</p>
+      </div>
+      <div class="podcast-copy">
+        <p>Real talk over a rolled one. Every episode digs into music, street culture, and whatever's actually going on in the community — no scripts, no corporate polish.</p>
+        <p>New episodes land on YouTube first, with audio up on Spotify and Apple Podcasts.</p>
+        <div class="btn-row">
+          <a class="btn solid" href="https://youtube.com/@thekulcha7514" target="_blank" rel="noopener">Watch on YouTube</a>
+          <a class="btn" href="https://open.spotify.com/episode/6WmUtNUqsR91yyef3RKiPR" target="_blank" rel="noopener">Spotify</a>
+          <a class="btn" href="https://podcasts.apple.com/za/podcast/episode-156-kickin-it-w-perci-d/id1676973104" target="_blank" rel="noopener">Apple Podcasts</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="events" class="section">
+    <div class="section-head">
+      <h2>Upcoming Sessions</h2>
+      <span class="section-num">02 / Where can you find The Kulcha</span>
+    </div>
+
+    <div class="event-row">
+      <div class="event-date"><span class="day">Sun</span><span class="mon">Every week</span></div>
+      <div class="event-info">
+        <h3>Kulcha Sundaze</h3>
+        <p>Weekly · Hotstix Music &amp; Pool Bar, Pretoria · A cultural Sunday experience</p>
+      </div>
+      <a class="btn" href="kulcha-sundaze.html">More info</a>
+    </div>
+
+    <div class="event-row">
+      <div class="event-date"><span class="day">28</span><span class="mon">Jul</span></div>
+      <div class="event-info">
+        <h3>The Comedy Cue Finale</h3>
+        <p>20:00–22:00 · Hotstix Music &amp; Pool Bar, Pretoria · From R50</p>
+      </div>
+      <a class="btn solid" href="https://www.quicket.co.za/events/383509-the-comedy-cue-finale/" target="_blank" rel="noopener">Get tickets</a>
+    </div>
+
+    <div class="event-row">
+      <div class="event-date"><span class="day">28</span><span class="mon">Aug</span></div>
+      <div class="event-info">
+        <h3>Payday Rave</h3>
+        <p>18:00–02:00 · Hotstix Music &amp; Pool Bar, Pretoria · From R50 · Drum &amp; Bass</p>
+      </div>
+      <a class="btn solid" href="https://www.quicket.co.za/events/383504-payday-rave/" target="_blank" rel="noopener">Get tickets</a>
+    </div>
+
+    <div class="event-row">
+      <div class="event-date"><span class="day">＋</span><span class="mon">More</span></div>
+      <div class="event-info">
+        <h3>All Events</h3>
+        <p>Every Kulcha session, past and upcoming, lives on Quicket</p>
+      </div>
+      <a class="btn" href="https://www.quicket.co.za/organisers/43915-the-kulcha" target="_blank" rel="noopener">See all</a>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="section-head">
+      <h2>About</h2>
+      <span class="section-num">03 / The story</span>
+    </div>
+    <div class="about-grid">
+      <div class="about-visual"></div>
+      <div class="about-copy">
+        <p class="pull-quote">"We follow the culture. We endorse the culture. We create the culture."</p>
+        <p>The Kulcha is a community-based movement from Pretoria — a podcast, an events collective, a talent platform, and a sound equipment hire service, all built around the same thing: the music, the culture, and everything in between.</p>
+        <p>We cover the scene other outlets skip: underground artists, cannabis culture, and the events that actually move the community forward. No gatekeeping, no corporate spin.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <h2>Get Involved</h2>
+      <span class="section-num">04 / Link up</span>
+    </div>
+    <div class="involve-grid">
+      <div class="involve-card">
+        <p class="eyebrow">Artists</p>
+        <h3>Perform With Us</h3>
+        <p>Rappers, singers, DJs, poets — if you've got a set, we've got a stage.</p>
+        <a class="btn" href="https://forms.gle/c19sUrJ8e19FGLz77" target="_blank" rel="noopener">Apply</a>
+      </div>
+      <div class="involve-card">
+        <p class="eyebrow">Vendors</p>
+        <h3>Set Up Shop</h3>
+        <p>Food, merch, crafts — bring your stall to the next session.</p>
+        <a class="btn" href="https://forms.gle/63uaof9pY5DJ5etB9" target="_blank" rel="noopener">Apply</a>
+      </div>
+      <div class="involve-card">
+        <p class="eyebrow">Everyone</p>
+        <h3>Join The Community</h3>
+        <p>First to know about drops, dates, and lineup announcements.</p>
+        <a class="btn" href="https://chat.whatsapp.com/KT1OQSl1Qar5RSiysOmWuZ" target="_blank" rel="noopener">Join WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-band">
+    <p class="eyebrow">Pull up</p>
+    <h2>Link Up</h2>
+    <p>Got an event, a collab, or something for the culture? Slide into the inbox, or pull up on the community — we read everything.</p>
+    <div class="social-list">
+      <a href="https://www.instagram.com/thekulchaza" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://twitter.com/thekulchaza" target="_blank" rel="noopener">X / Twitter</a>
+      <a href="https://web.facebook.com/TheKulchaZA/" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://youtube.com/@thekulcha7514" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://www.buymeacoffee.com/TheKulcha" target="_blank" rel="noopener">Buy us a joint</a>
+    </div>
+  </section>
+
+  <footer>THE KULCHA ZA — CULTURE, UNCUT — © 2026</footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const nav = document.getElementById('mainNav');
+    toggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+
+    const preloader = document.getElementById('preloader');
+    const barFill = document.getElementById('plBarFill');
+    const pct = document.getElementById('plPct');
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (reduceMotion) {
+      preloader.classList.add('hide');
+    } else {
+      let p = 0;
+      const t = setInterval(() => {
+        p += Math.random() * 18;
+        if (p >= 100) { p = 100; clearInterval(t); setTimeout(() => preloader.classList.add('hide'), 250); }
+        barFill.style.width = p + '%';
+        pct.textContent = Math.floor(p) + '%';
+      }, 120);
+    }
+
+    const stats = document.querySelectorAll('.stat .num');
+    const animateStat = (el) => {
+      const target = parseFloat(el.dataset.count);
+      const decimals = parseInt(el.dataset.decimal || '0', 10);
+      const duration = 1200;
+      const start = performance.now();
+      const step = (now) => {
+        const progress = Math.min((now - start) / duration, 1);
+        const value = target * progress;
+        el.textContent = decimals ? value.toFixed(decimals) : Math.floor(value);
+        if (progress < 1) requestAnimationFrame(step);
+        else el.textContent = decimals ? target.toFixed(decimals) : target;
+      };
+      requestAnimationFrame(step);
+    };
+
+    if (reduceMotion) {
+      stats.forEach(el => { el.textContent = el.dataset.decimal ? parseFloat(el.dataset.count).toFixed(el.dataset.decimal) : el.dataset.count; });
+    } else {
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            animateStat(entry.target);
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.5 });
+      stats.forEach(el => observer.observe(el));
+    }
+  </script>
+
+</body>
+</html>
