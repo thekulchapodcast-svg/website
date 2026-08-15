@@ -240,6 +240,23 @@
     position:absolute;bottom:1.2rem;left:1.2rem;
     font-family:'IBM Plex Mono',monospace;font-size:0.68rem;
     letter-spacing:0.08em;color:var(--gold);
+    z-index:2;
+  }
+
+  /* About slideshow */
+  .slideshow{overflow:hidden;}
+  .slideshow .slide{
+    position:absolute;inset:0;
+    opacity:0;
+    transition:opacity 0.9s ease;
+    display:flex;align-items:center;justify-content:center;
+    background:repeating-linear-gradient(135deg, #1c1b1a 0 18px, #121110 18px 36px);
+  }
+  .slideshow .slide.active{opacity:1;position:relative;}
+  .slideshow .slide img{width:100%;height:100%;object-fit:cover;display:block;}
+  .slideshow .slide .placeholder-label{
+    font-family:'IBM Plex Mono',monospace;font-size:0.72rem;
+    text-transform:uppercase;letter-spacing:0.08em;color:#8a8478;
   }
   .pull-quote{
     font-family:'Anton',sans-serif;
