@@ -45,12 +45,11 @@
   </section>
 
   <div class="stats">
-    <!-- Episodes + rating pulled from your Apple Podcasts / Quicket listings.
-         Cities Reached is a placeholder — swap data-count for your real number. -->
-    <div class="stat"><div class="num" data-count="156">0</div><div class="label">Episodes</div></div>
-    <div class="stat"><div class="num" data-count="15">0</div><div class="label">Quicket Reviews</div></div>
+    <!-- Update these numbers here anytime they change: -->
+    <div class="stat"><div class="num" data-count="156">0</div><div class="label">Podcast Episodes</div></div>
     <div class="stat"><div class="num" data-count="4.8" data-decimal="1">0</div><div class="label">Quicket Rating</div></div>
-    <div class="stat"><div class="num" data-count="2">0</div><div class="label">Cities Reached</div></div>
+    <div class="stat"><div class="num" data-count="4000">0</div><div class="label">IG Followers</div></div>
+    <div class="stat"><div class="num" data-count="300">0</div><div class="label">Events Hosted</div></div>
   </div>
 
   <section id="podcast" class="section">
@@ -131,7 +130,19 @@
       <span class="section-num">03 / The story</span>
     </div>
     <div class="about-grid">
-      <div class="about-visual"></div>
+      <!--
+        SLIDESHOW: add your photos here. Duplicate a .slide <div> for each
+        new photo, and put the FIRST one's class as "slide active" — only
+        one slide should have "active" at a time in the code (JS handles
+        switching after that). Example with a real photo:
+          <div class="slide"><img src="assets/about/your-photo.jpg" alt="The Kulcha"></div>
+        Slides rotate automatically every 4 seconds.
+      -->
+      <div class="about-visual slideshow" id="aboutSlideshow">
+        <div class="slide active"><span class="placeholder-label">Add a photo</span></div>
+        <div class="slide"><span class="placeholder-label">Add a photo</span></div>
+        <div class="slide"><span class="placeholder-label">Add a photo</span></div>
+      </div>
       <div class="about-copy">
         <p class="pull-quote">"We follow the culture. We endorse the culture. We create the culture."</p>
         <p>The Kulcha is a community-based movement from Pretoria — a podcast, an events collective, a talent platform, and a sound equipment hire service, all built around the same thing: the music, the culture, and everything in between.</p>
@@ -173,7 +184,7 @@
     <p>Got an event, a collab, or something for the culture? Slide into the inbox, or pull up on the community — we read everything.</p>
     <div class="social-list">
       <a href="https://www.instagram.com/thekulchaza" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://twitter.com/thekulchaza" target="_blank" rel="noopener">X / Twitter</a>
+      <a href="https://www.tiktok.com/@thekulchaza" target="_blank" rel="noopener">TikTok</a>
       <a href="https://web.facebook.com/TheKulchaZA/" target="_blank" rel="noopener">Facebook</a>
       <a href="https://youtube.com/@thekulcha7514" target="_blank" rel="noopener">YouTube</a>
       <a href="https://www.buymeacoffee.com/TheKulcha" target="_blank" rel="noopener">Buy us a joint</a>
@@ -235,6 +246,17 @@
         });
       }, { threshold: 0.5 });
       stats.forEach(el => observer.observe(el));
+    }
+
+    // About section photo slideshow — auto-rotates every 4 seconds
+    const slides = document.querySelectorAll('#aboutSlideshow .slide');
+    if (slides.length > 1 && !reduceMotion) {
+      let slideIndex = 0;
+      setInterval(() => {
+        slides[slideIndex].classList.remove('active');
+        slideIndex = (slideIndex + 1) % slides.length;
+        slides[slideIndex].classList.add('active');
+      }, 4000);
     }
   </script>
 
